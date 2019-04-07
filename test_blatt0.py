@@ -28,8 +28,7 @@ def test_flatten2():
 
 
 def test_flatten3():
-    input = [["Hallo"]["Welt"]]
-    assert flatten(input) == ["Hallo" "Welt"]
+    assert flatten([["Hallo"],["Welt"]]) == ["Hallo", "Welt"]
 
 
 def test_solve_equation1():
@@ -49,10 +48,6 @@ def test_fizz_buzz():
               19, "Buzz", "Fizz", 22, 23, "Fizz", "Buzz", 26, "Fizz", 28, 29, "Fizz Buzz", 31, 32, "Fizz", 34, "Buzz",
               "Fizz"]
     assert fizz_buzz(37) == output
-
-
-def test_solve_equation():
-    pass  # TODO
 
 
 def test_int_to_bin():

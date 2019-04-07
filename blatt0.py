@@ -10,6 +10,7 @@ def flatten(n):
     result = []
     if isinstance(n, list):
         for i in n:
+            print(i)
             result = result + i
         return result
     return n
